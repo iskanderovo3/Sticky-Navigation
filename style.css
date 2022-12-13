@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+
+html {
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.active {
+    color: tomato !important;
+}
+
+/* HEADER */
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: background-color .5s ease;
+}
+.site-header.white-header{
+    background-color: #fff;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.site-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sitenav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sitenav-item:not(:last-child) {
+    margin-right: 15px;
+    font-weight: 500;
+}
+.sitenav-link {
+    text-decoration: none;
+    color: #fff;
+    transition: color .3s;
+}
+.site-header.white-header .sitenav-link{
+    color: #000;
+}
+.sitenav-link:hover{
+    color: tomato;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("https://cdn.pixabay.com/photo/2018/05/04/07/55/snow-3373432_960_720.jpg") center center / cover;
+    text-align: center;
+}
+.hero-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #fff;
+    font-style: normal;
+}
+.hero-text {
+    font-style: italic;
+    color: #fff;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
